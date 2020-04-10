@@ -1,5 +1,5 @@
 ﻿using Foundation;
-using MultiIdiomaStarter.DependencyService;
+using MultiIdiomaStarter.DependencyServices;
 using MultiIdiomaStarter.iOS.ServiceDependency;
 using System.Globalization;
 using System.Threading;

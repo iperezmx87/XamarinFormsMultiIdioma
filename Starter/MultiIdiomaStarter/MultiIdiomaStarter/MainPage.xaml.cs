@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiIdiomaStarter.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace MultiIdiomaStarter
         public MainPage()
         {
             InitializeComponent();
+
+            // tomar textos trducidos del codigo directamente
+            lblSayGoodbye.Text = AppResources.SayGoodbye;
         }
     }
 }

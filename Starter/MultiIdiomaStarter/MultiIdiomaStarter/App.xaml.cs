@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiIdiomaStarter.DependencyServices;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,13 @@ namespace MultiIdiomaStarter
         public App()
         {
             InitializeComponent();
+
+            // configurar el idioma del dispositivo usando un servicio de dependencia
+            if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
+            {
+                var ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
+                DependencyService.Get<ILocalize>().SetLocale(ci);
+            }
 
             MainPage = new MainPage();
         }

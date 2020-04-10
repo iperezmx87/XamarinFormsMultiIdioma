@@ -1,4 +1,4 @@
-﻿using MultiIdiomaStarter.DependencyService;
+﻿using MultiIdiomaStarter.DependencyServices;
 using MultiIdiomaStarter.Droid.ServiceDependency;
 using System;
 using System.Globalization;
